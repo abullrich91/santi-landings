@@ -804,7 +804,7 @@ body {
 .features-section-2 {
 	padding-top: 30px;
 	padding-bottom: 30px;
-	background: linear-gradient(to right, rgba(255, 255, 255, 0.99), rgba(255, 255, 255, 0)), url(../images/feature_bg.jpg) no-repeat center center;
+	background: linear-gradient(to right, rgba(255, 255, 255, 0.99), rgba(255, 255, 255, 0)), url(../images/banner-cloudbackup.jpg) no-repeat center center;
 	background-size: cover;
 }
 
