@@ -1,31 +1,24 @@
-
-
-$(function () {
-  "use strict";
-
-    $('#contact-form').validator();
+jQuery(function($) {
+    "use strict";
 
     $('#contact-form').on('submit', function (e) {
-        if (!e.isDefaultPrevented()) {
-            var url = "assets/php/contact.php";
+        var url = "localhost:8081/process-form";
 
-            $.ajax({
-                type: "POST",
-                url: url,
-                data: $(this).serialize(),
-                success: function (data)
-                {
-                    var messageAlert = 'alert-' + data.type;
-                    var messageText = data.message;
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: $(this).serialize(),
+            success: function (data) {
+                var messageAlert = 'alert-' + data.type;
+                var messageText = data.message;
 
-                    var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
-                    if (messageAlert && messageText) {
-                        $('#contact-form').find('.messages').html(alertBox);
-                        $('#contact-form')[0].reset();
-                    }
+                var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+                if (messageAlert && messageText) {
+                    $('#contact-form').find('.messages').html(alertBox);
+                    $('#contact-form')[0].reset();
                 }
-            });
-            return false;
-        }
-    })
+            }
+        });
+        return false;
+    });
 });

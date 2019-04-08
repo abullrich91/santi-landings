@@ -210,5 +210,70 @@ $('.subscribe-form').submit(function(e) {
     });
 });
 
+$('#contact-form').on('submit', function (e) {
+        var obj = new Object();
+        obj.fullName = document.getElementsByName('fullName')[0].value;
+        obj.organization = document.getElementsByName('organization')[0].value;
+        obj.email = document.getElementsByName('email')[0].value;
+        obj.phone = document.getElementsByName('phone')[0].value;
+        obj.message = document.getElementsByName('message')[0].value;
+        /*var url = "http://localhost:8081/process-form";
+
+        var req = new XMLHttpRequest();
+        req.open('POST', url, false);
+        req.setRequestHeader("Access-Control-Allow-Origin", "*");
+        req.send(JSON.stringify(obj));
+
+        return false;
+
+    var url = "http://localhost:8081/process-form";
+
+    var req = new XMLHttpRequest();
+    req.open('POST', url, false);
+    req.setRequestHeader("Access-Control-Allow-Origin", "*");
+    req.send($(this).serialize());
+    if (req.status === 200) {
+        var messageAlert = 'alert-' + data.type;
+        var messageText = data.message;
+
+        var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+        if (messageAlert && messageText) {
+            $('#contact-form').find('.messages').html(alertBox);
+            $('#contact-form')[0].reset();
+        }
+    }*/
+
+    var url = "http://localhost:8081/process-form";
+
+    $.ajax({
+        type: "POST",
+        url: url,
+        data: JSON.stringify(obj),
+        /*xhr: function(){
+            var xhr = jQuery.ajaxSettings.xhr();
+            xhr.open("POST", url, false);
+            xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
+            // do stuff with xhr;
+            return xhr;
+        },*/
+        headers: {
+            "Access-Control-Allow-Origin": "*",
+            "Content-Type": "application/json;charset=UTF-8"
+        },
+        success: function (data)
+        {
+            var messageAlert = 'alert-' + data.type;
+            var messageText = data.message;
+
+            var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+            if (messageAlert && messageText) {
+                $('#contact-form').find('.messages').html(alertBox);
+                $('#contact-form')[0].reset();
+            }
+        }
+    });
+    return false;
+});
+
 
 });
