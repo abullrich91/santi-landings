@@ -223,40 +223,7 @@ jQuery(function ($) {
         });
     });
 
-    /*$('#contact-form').on('submit', function (e) {
-        var obj = new Object();
-        obj.fullName = document.getElementsByName('fullName')[0].value;
-        obj.organization = document.getElementsByName('organization')[0].value;
-        obj.email = document.getElementsByName('email')[0].value;
-        obj.phone = document.getElementsByName('phone')[0].value;
-        obj.message = document.getElementsByName('message')[0].value;
-
-
-        var url = "http://localhost:8081/process-form";
-
-        $.ajax({
-            type: "POST",
-            url: url,
-            data: JSON.stringify(obj),
-            headers: {
-                "Access-Control-Allow-Origin": "*",
-                "Content-Type": "application/json;charset=UTF-8"
-            },
-            success: function (data) {
-                var messageAlert = 'alert-' + data.type;
-                var messageText = data.message;
-
-                var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
-                if (messageAlert && messageText) {
-                    $('#contact-form').find('.messages').html(alertBox);
-                    $('#contact-form')[0].reset();
-                }
-            }
-        });
-        return false;
-    });*/
-
-    var apiKey = "443e19ec-3036-43fe-918c-987d81cf1756";
+    const apiKey = "443e19ec-3036-43fe-918c-987d81cf1756";
 
     $('#contact-form').on('submit', function (e) {
         const formData = {};
@@ -265,6 +232,16 @@ jQuery(function ($) {
         formData.email = document.getElementsByName('email')[0].value;
         formData.phone = document.getElementsByName('phone')[0].value;
         formData.message = document.getElementsByName('message')[0].value;
+
+        const formButton = $("#formButton");
+        formButton.prop("disabled", true);
+
+        const responseText = $("#responseText");
+        responseText.text("Su contacto ha sido enviado exitosamente. Un representante de Allkom se comunicará con ud. a la brevedad.");
+
+        const formResponse = $("#formResponse");
+        formResponse.css('display', 'none');
+        responseText.css('color', 'green !important');
 
         Email.send({
             SecureToken: apiKey,
@@ -285,6 +262,11 @@ jQuery(function ($) {
                     "<br> Empresa: " + formData.organization +
                     "<br> Teléfono: " + formData.phone +
                     "<br> Mensaje: " + formData.message
+            }, function() {
+                toggleResponse();
+                formButton.prop("disabled", false);
+                responseText.text("Ocurrió un error al intentar comunicarnos con ud. Por favor, revise su casilla de mail.");
+                responseText.css('color', 'red !important');
             }).then(function () {
                 const fullDate = new Date();
                 const date = fullDate.toISOString().split('T')[0];
@@ -297,8 +279,31 @@ jQuery(function ($) {
                     organization: formData.organization,
                     message: formData.message
                 });
+
+                toggleResponse();
+                formButton.prop("disabled", false);
+            }, function() {
+                toggleResponse();
+                formButton.prop("disabled", false);
+                responseText.text("Error inesperado. Por favor, vuelva a intentarlo más tarde.");
+                responseText.css('color', 'red !important');
             });
+        }, function() {
+            toggleResponse();
+            formButton.prop("disabled", false);
+            responseText.text("Error inesperado. Por favor, vuelva a intentarlo más tarde.");
+            responseText.css('color', 'red !important');
         });
+
         return false;
     });
+
+    function toggleResponse() {
+        const formResponse = document.getElementById("formResponse");
+        if (formResponse.style.display === "none") {
+            formResponse.style.display = "block";
+        } else {
+            formResponse.style.display = "none";
+        }
+    }
 });
