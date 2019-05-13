@@ -226,7 +226,10 @@ jQuery(function ($) {
     //Test
     // const apiKey = "443e19ec-3036-43fe-918c-987d81cf1756";
 
-    const apiKey = 'ddc7423d-51cc-457c-8cf5-fd37ad3cc521';
+    // Alternative
+    // const apiKey = 'ddc7423d-51cc-457c-8cf5-fd37ad3cc521';
+
+    const apiKey = '1de04ebb-df03-423d-b1e3-0edab9856e2b';
 
     $('#contact-form').on('submit', function (e) {
         const formData = {};
