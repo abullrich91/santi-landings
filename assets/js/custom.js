@@ -3,6 +3,19 @@
 jQuery(function ($) {
     "use strict";
 
+    const firebaseConfig = {
+        apiKey: "AIzaSyCGU8bpjC-jqv5rgn-SOhH68CdB5fxhiFM",
+        authDomain: "at-allkom-cloud-users.firebaseapp.com",
+        databaseURL: "https://at-allkom-cloud-users.firebaseio.com",
+        projectId: "at-allkom-cloud-users",
+        storageBucket: "at-allkom-cloud-users.appspot.com",
+        messagingSenderId: "305026047824",
+        appId: "1:305026047824:web:335a7962f3168f83"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
     // get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable
     var mainbottom = $('#main').offset().top;
 
@@ -246,30 +259,46 @@ jQuery(function ($) {
     var apiKey = "443e19ec-3036-43fe-918c-987d81cf1756";
 
     $('#contact-form').on('submit', function (e) {
-
-        var obj = new Object();
-        obj.fullName = document.getElementsByName('fullName')[0].value;
-        obj.organization = document.getElementsByName('organization')[0].value;
-        obj.email = document.getElementsByName('email')[0].value;
-        obj.phone = document.getElementsByName('phone')[0].value;
-        obj.message = document.getElementsByName('message')[0].value;
+        const formData = {};
+        formData.fullName = document.getElementsByName('fullName')[0].value;
+        formData.organization = document.getElementsByName('organization')[0].value;
+        formData.email = document.getElementsByName('email')[0].value;
+        formData.phone = document.getElementsByName('phone')[0].value;
+        formData.message = document.getElementsByName('message')[0].value;
 
         Email.send({
-            SecureToken : apiKey,
-            // Host : "smtp.elasticemail.com",
-            // Username : "somostrueno@gmail.com",
-            // Password : "macellari91",
-            To : obj.email,
-            From : "somostrueno@gmail.com",
-            Subject : "Confirmación de contacto",
-            Body : "Muchas gracias por contactarte con nosotros. \n" +
+            SecureToken: apiKey,
+            To: formData.email,
+            From: "somostrueno@gmail.com",
+            Subject: "Confirmación de contacto",
+            Body: "Muchas gracias por contactarte con nosotros. <br>" +
                 "A la brevedad un representante de AllKom se comunicará con ud."
-        }).then(
-            message => alert(message)
-        );
+        }).then(function () {
+            Email.send({
+                SecureToken: apiKey,
+                To: "comercial@all-kom.com",
+                From: "somostrueno@gmail.com",
+                Subject: "Nuevo Usuario",
+                Body: "Un nuevo usuario se ha registrado. <br>" +
+                    "<br> Nombre Completo: " + formData.fullName +
+                    "<br> Email: " + formData.email +
+                    "<br> Empresa: " + formData.organization +
+                    "<br> Teléfono: " + formData.phone +
+                    "<br> Mensaje: " + formData.message
+            }).then(function () {
+                const fullDate = new Date();
+                const date = fullDate.toISOString().split('T')[0];
+                const clock = fullDate.toISOString().split('T')[1].split('.')[0];
 
+                firebase.firestore().collection('cloud-users/').doc(date + " " + clock).set({
+                    fullName: formData.fullName,
+                    email: formData.email,
+                    phone: formData.phone,
+                    organization: formData.organization,
+                    message: formData.message
+                });
+            });
+        });
         return false;
-
     });
-
 });
