@@ -249,56 +249,62 @@ jQuery(function ($) {
         formResponse.css('display', 'none');
         responseText.css('color', 'green !important');
 
-        Email.send({
-            SecureToken: apiKey,
-            To: formData.email,
-            From: "somostrueno@gmail.com",
-            Subject: "Confirmación de contacto",
-            Body: "Muchas gracias por contactarte con nosotros. <br>" +
-                "A la brevedad un representante de AllKom se comunicará con ud."
-        }).then(function () {
-            Email.send({
-                SecureToken: apiKey,
-                To: "comercial@all-kom.com",
-                From: "somostrueno@gmail.com",
-                Subject: "Nuevo Usuario",
-                Body: "Un nuevo usuario se ha registrado. <br>" +
-                    "<br> Nombre Completo: " + formData.fullName +
-                    "<br> Email: " + formData.email +
-                    "<br> Empresa: " + formData.organization +
-                    "<br> Teléfono: " + formData.phone +
-                    "<br> Mensaje: " + formData.message
-            }, function() {
-                toggleResponse();
-                formButton.prop("disabled", false);
-                responseText.text("Ocurrió un error al intentar comunicarnos con ud. Por favor, revise su casilla de mail.");
-                responseText.css('color', 'red !important');
-            }).then(function () {
-                const fullDate = new Date();
-                const date = fullDate.toISOString().split('T')[0];
-                const clock = fullDate.toISOString().split('T')[1].split('.')[0];
+        $.ajax({
+            type: "POST",
+            url: 'emailSender.php',
+            dataType: 'json',
+            data: {
+                to: formData.email,
+                subject: "Confirmación de contacto",
+                message: "Muchas gracias por contactarte con nosotros. \n" +
+                    "A la brevedad un representante de AllKom se comunicará con ud."
+            },
 
-                firebase.firestore().collection('cloud-users/').doc(date + " " + clock).set({
-                    fullName: formData.fullName,
-                    email: formData.email,
-                    phone: formData.phone,
-                    organization: formData.organization,
-                    message: formData.message
-                });
+            success: function (obj, textstatus) {
+                $.ajax({
+                    type: "POST",
+                    url: '/emailSender.php',
+                    dataType: 'json',
+                    data: {
+                        to: "comercial@all-kom.com",
+                        subject: "Registro Formulario Cloudbackup",
+                        message: "Un nuevo usuario se ha registrado. \n" +
+                            "\n Nombre Completo: " + formData.fullName +
+                            "\n Email: " + formData.email +
+                            "\n Empresa: " + formData.organization +
+                            "\n Teléfono: " + formData.phone +
+                            "\n Mensaje: " + formData.message
+                    },
 
-                toggleResponse();
-                formButton.prop("disabled", false);
-            }, function() {
+                    success: function (obj, textstatus) {
+                        const fullDate = new Date();
+                        const dateWithTimezone = new Date(fullDate.getTime() - fullDate.getTimezoneOffset() * 60000);
+                        const date = dateWithTimezone.toISOString().split('T')[0];
+                        const clock = dateWithTimezone.toISOString().split('T')[1].split('.')[0];
+
+                        firebase.firestore().collection('cloud-users/').doc(date + " " + clock).set({
+                            fullName: formData.fullName,
+                            email: formData.email,
+                            phone: formData.phone,
+                            organization: formData.organization,
+                            message: formData.message
+                        });
+
+                        toggleResponse();
+                        formButton.prop("disabled", false);
+                    }, error: function () {
+                        toggleResponse();
+                        formButton.prop("disabled", false);
+                        responseText.text("Error inesperado. Por favor, vuelva a intentarlo más tarde.");
+                        responseText.css('color', 'red !important');
+                    }
+                })
+            }, error: function () {
                 toggleResponse();
                 formButton.prop("disabled", false);
                 responseText.text("Error inesperado. Por favor, vuelva a intentarlo más tarde.");
                 responseText.css('color', 'red !important');
-            });
-        }, function() {
-            toggleResponse();
-            formButton.prop("disabled", false);
-            responseText.text("Error inesperado. Por favor, vuelva a intentarlo más tarde.");
-            responseText.css('color', 'red !important');
+            }
         });
 
         return false;
