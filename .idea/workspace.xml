@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca4cd3b3-2552-46ff-ad48-cf47677b7406" name="Default Changelist" comment="">
+    <list default="true" id="ca4cd3b3-2552-46ff-ad48-cf47677b7406" name="Default Changelist" comment="Changes to php email sender">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/contact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fortinet/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/fortinet/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fortinet/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/fortinet/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,112 +16,55 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fortinet/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="60" column="18" lean-forward="true" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
+              <folding>
+                <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fortinet/assets/js/custom.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="251" column="32" selection-start-line="251" selection-start-column="32" selection-end-line="251" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fortinet/assets/css/bootstrap.min.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="4" column="73037" selection-start-line="4" selection-start-column="73037" selection-end-line="4" selection-end-column="73037" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
+        <entry file="file://$PROJECT_DIR$/fortinet/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="369" column="98" selection-start-line="369" selection-start-column="98" selection-end-line="369" selection-end-column="98" />
+            <state relative-caret-position="239">
+              <caret line="1960" column="96" selection-start-line="1960" selection-start-column="96" selection-end-line="1960" selection-end-column="96" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/contact.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-              <folding>
-                <element signature="e#114#121#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/custom.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="257" column="12" selection-start-line="257" selection-start-column="12" selection-end-line="257" selection-end-column="12" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#114#121#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="16867" column="4" selection-start-line="16867" selection-start-column="4" selection-end-line="16867" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="1453" column="24" lean-forward="true" selection-start-line="1453" selection-start-column="24" selection-end-line="1453" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/owl.theme.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-977" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/ionicons.min.css">
+        <entry file="file://$PROJECT_DIR$/fortinet/emailSender.php">
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/bootstrap.min.css">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/animsition.min.css">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/animate.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
         </entry>
       </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Designed for</find>
-      <find>Connect</find>
-      <find>destiny isn</find>
-      <find>Protege</find>
-      <find>everyday</find>
-      <find>destiny</find>
-      <find>still con</find>
-      <find>más</find>
-      <find>Feature section</find>
-      <find>assets</find>
-      <find>&lt;&lt;&lt;</find>
-      <find>services</find>
-      <find>animsition-link</find>
-      <find>id=&quot;main</find>
-      <find>navbar-toggle</find>
-      <find>features-section-2</find>
-      <find>header</find>
-      <find>min-width: 7</find>
       <find>features-secti</find>
       <find>logo.png</find>
       <find>features</find>
@@ -137,13 +77,39 @@
       <find>contact-form</find>
       <find>rgba(89, 36, 236, 0.5)</find>
       <find>#5924EC</find>
+      <find>.css</find>
+      <find>&lt;br&gt;</find>
+      <find>custom.js</find>
+      <find>banner</find>
+      <find>2</find>
+      <find>features-section-2</find>
+      <find>tag manage</find>
+      <find>features-content</find>
+      <find>37</find>
+      <find>past-</find>
+      <find>list-style-type</find>
+      <find>past-main</find>
+      <find>navbar</find>
+      <find>cloud</find>
+      <find>.features-section-3</find>
+      <find>cloud backup</find>
+      <find>max-width</find>
+      <find>features-section-3</find>
     </findStrings>
     <replaceStrings>
       <replace>#50afff</replace>
+      <replace>.prop</replace>
+      <replace>\n</replace>
+      <replace>3</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -155,9 +121,15 @@
         <option value="$PROJECT_DIR$/contact.html" />
         <option value="$PROJECT_DIR$/index-app.html" />
         <option value="$PROJECT_DIR$/assets/js/contact.js" />
-        <option value="$PROJECT_DIR$/assets/js/custom.js" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/assets/php/emailSender.php" />
+        <option value="$PROJECT_DIR$/emailSender.php" />
+        <option value="$PROJECT_DIR$/assets/js/custom.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/cloud-backup/index.html" />
+        <option value="$PROJECT_DIR$/fortinet/assets/js/custom.js" />
+        <option value="$PROJECT_DIR$/fortinet/index.html" />
+        <option value="$PROJECT_DIR$/fortinet/assets/css/style.css" />
       </list>
     </option>
   </component>
@@ -171,17 +143,22 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
+    <option name="x" value="42" />
     <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="830" />
+    <option name="width" value="1398" />
+    <option name="height" value="877" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <autoscrollFromSource ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -192,44 +169,73 @@
             <path>
               <item name="santi-landings" type="b2602c69:ProjectViewProjectNode" />
               <item name="santi-landings" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="santi-landings" type="b2602c69:ProjectViewProjectNode" />
+              <item name="santi-landings" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-backup" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="santi-landings" type="b2602c69:ProjectViewProjectNode" />
+              <item name="santi-landings" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-backup" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="santi-landings" type="b2602c69:ProjectViewProjectNode" />
               <item name="santi-landings" type="462c0819:PsiDirectoryNode" />
+              <item name="fortinet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="santi-landings" type="b2602c69:ProjectViewProjectNode" />
+              <item name="santi-landings" type="462c0819:PsiDirectoryNode" />
+              <item name="fortinet" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="santi-landings" type="b2602c69:ProjectViewProjectNode" />
+              <item name="santi-landings" type="462c0819:PsiDirectoryNode" />
+              <item name="fortinet" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="santi-landings" type="b2602c69:ProjectViewProjectNode" />
               <item name="santi-landings" type="462c0819:PsiDirectoryNode" />
+              <item name="fortinet" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="santi-landings" type="b2602c69:ProjectViewProjectNode" />
-              <item name="santi-landings" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="php" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559279257774" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/fortinet" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/assets/logos" />
+      <recent name="$PROJECT_DIR$/cloud-backup" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/assets/logos" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -244,15 +250,19 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager" selected="JavaScript Debug.index.html (1)">
     <configuration name="index-app.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63344/santi-landings/index-app.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63344/santi-landings/index.html" useBuiltInWebServerPort="true">
+    <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/santi-landings/fortinet/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/santi-landings/cloud-backup/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.html (1)" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.index-app.html" />
       </list>
@@ -270,51 +280,89 @@
       <updated>1553716523847</updated>
       <workItem from="1553716525902" duration="5651000" />
       <workItem from="1553903500747" duration="9683000" />
+      <workItem from="1558570008345" duration="3694000" />
+      <workItem from="1558634905584" duration="1403000" />
+      <workItem from="1558961321560" duration="449000" />
+      <workItem from="1558985511114" duration="703000" />
+      <workItem from="1559135224950" duration="562000" />
+      <workItem from="1559191301082" duration="2463000" />
+      <workItem from="1559225581261" duration="5884000" />
     </task>
+    <task id="LOCAL-00001" summary="Changes to php email sender">
+      <created>1558572664076</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1558572664076</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Changes success for then">
+      <created>1558574369043</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1558574369043</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15334000" />
+    <option name="totallyTimeSpent" value="31440000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="42" y="23" width="1398" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19943622" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21017699" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32891566" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32356688" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="SBT Console" order="11" />
+      <window_info anchor="bottom" id="CheckStyle" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Changes to php email sender" />
+    <MESSAGE value="Changes success for then" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes success for then" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/assets/js/custom.js</url>
+          <url>file://$PROJECT_DIR$/cloud-backup/assets/js/custom.js</url>
           <line>228</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/assets/js/contact.js</url>
+          <url>file://$PROJECT_DIR$/cloud-backup/assets/js/contact.js</url>
           <line>4</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
@@ -330,46 +378,14 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index-app2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7174">
-          <caret line="422" column="6" selection-start-line="422" selection-start-column="6" selection-end-line="428" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index-form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="67" column="49" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index-app.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="178" column="4" lean-forward="true" selection-start-line="178" selection-start-column="4" selection-end-line="178" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/logos/logo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/logos/favicon.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" column="31" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/php/contact.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/index-app2.html" />
+    <entry file="file://$PROJECT_DIR$/cloud-backup/assets/images/1.png" />
+    <entry file="file://$PROJECT_DIR$/index-form.html" />
+    <entry file="file://$PROJECT_DIR$/index-app.html" />
+    <entry file="file://$PROJECT_DIR$/cloud-backup/assets/logos/logo.png" />
+    <entry file="file://$PROJECT_DIR$/cloud-backup/assets/logos/favicon.png" />
+    <entry file="file://$PROJECT_DIR$/contact.html" />
+    <entry file="file://$PROJECT_DIR$/assets/php/contact.php" />
     <entry file="http://localhost:63344/santi-landings/assets/js/custom.js">
       <provider selected="true" editor-type-id="httpFileEditor" />
     </entry>
@@ -380,59 +396,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/contact.js">
+    <entry file="file://$PROJECT_DIR$/assets/js/contact.js" />
+    <entry file="file://$PROJECT_DIR$/cloud-backup/assets/css/owl.theme.css" />
+    <entry file="file://$PROJECT_DIR$/cloud-backup/assets/css/ionicons.min.css" />
+    <entry file="file://$PROJECT_DIR$/cloud-backup/assets/css/bootstrap.min.css" />
+    <entry file="file://$PROJECT_DIR$/cloud-backup/assets/css/animsition.min.css" />
+    <entry file="file://$PROJECT_DIR$/cloud-backup/assets/css/animate.css" />
+    <entry file="file://$PROJECT_DIR$/.idea/santi-landings.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-backup/assets/css/style.css" />
+    <entry file="file://$PROJECT_DIR$/cloud-backup/assets/images/hero3.jpg" />
+    <entry file="file://$PROJECT_DIR$/cloud-backup/assets/images/iphone_hand_1.jpg" />
+    <entry file="file://$PROJECT_DIR$/cloud-backup/assets/images/testimonial1.jpg" />
+    <entry file="file://$PROJECT_DIR$/cloud-backup/assets/js/menu.js" />
+    <entry file="file://$PROJECT_DIR$/cloud-backup/assets/js/plugins.js" />
+    <entry file="file://$PROJECT_DIR$/cloud-backup/assets/js/validator.js" />
+    <entry file="file://$PROJECT_DIR$/cloud-backup/assets/js/custom.js" />
+    <entry file="file://$PROJECT_DIR$/cloud-backup/emailSender.php" />
+    <entry file="file://$PROJECT_DIR$/fortinet/assets/js/menu.js" />
+    <entry file="file://$PROJECT_DIR$/cloud-backup/index.html" />
+    <entry file="file://$PROJECT_DIR$/fortinet/assets/images/allkom-fortibanner01.jpg" />
+    <entry file="file://$PROJECT_DIR$/fortinet/assets/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="4" column="73037" selection-start-line="4" selection-start-column="73037" selection-end-line="4" selection-end-column="73037" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fortinet/emailSender.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fortinet/assets/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="251" column="32" selection-start-line="251" selection-start-column="32" selection-end-line="251" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fortinet/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="60" column="18" lean-forward="true" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
           <folding>
-            <element signature="e#114#121#1" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/custom.js">
+    <entry file="file://$PROJECT_DIR$/fortinet/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="257" column="12" selection-start-line="257" selection-start-column="12" selection-end-line="257" selection-end-column="12" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#114#121#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/owl.theme.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-977" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/ionicons.min.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/animsition.min.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/animate.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="1453" column="24" lean-forward="true" selection-start-line="1453" selection-start-column="24" selection-end-line="1453" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="369" column="98" selection-start-line="369" selection-start-column="98" selection-end-line="369" selection-end-column="98" />
+        <state relative-caret-position="239">
+          <caret line="1960" column="96" selection-start-line="1960" selection-start-column="96" selection-end-line="1960" selection-end-column="96" />
         </state>
       </provider>
     </entry>

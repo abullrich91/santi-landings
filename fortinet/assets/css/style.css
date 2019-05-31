@@ -1955,6 +1955,13 @@ label {
 
     /*-*/
 
+    .features-section-3 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.99), rgba(255, 255, 255, 0.7)), url(../images/allkom-fortimagen04.png) no-repeat center center;
+        background-size: cover;
+    }
+
     .features-section-3 .features-content {
         padding: 0;
     }
