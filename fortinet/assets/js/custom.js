@@ -252,7 +252,7 @@ jQuery(function ($) {
                     dataType: 'json',
                     data: {
                         to: "comercial@all-kom.com",
-                        subject: "Registro Formulario Cloudbackup",
+                        subject: "Registro Formulario Fortinet",
                         message: "Un nuevo usuario se ha registrado. \n" +
                             "\n Nombre Completo: " + formData.fullName +
                             "\n Email: " + formData.email +
@@ -267,7 +267,7 @@ jQuery(function ($) {
                         const date = dateWithTimezone.toISOString().split('T')[0];
                         const clock = dateWithTimezone.toISOString().split('T')[1].split('.')[0];
 
-                        firebase.firestore().collection('cloud-users/').doc(date + " " + clock).set({
+                        firebase.firestore().collection('fortinet-users/').doc(date + " " + clock).set({
                             fullName: formData.fullName,
                             email: formData.email,
                             phone: formData.phone,
