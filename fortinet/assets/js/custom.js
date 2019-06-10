@@ -21,8 +21,6 @@ jQuery(function ($) {
 
     if (window.matchMedia("(min-width: 800px)").matches) {
         document.getElementById("custom-header").classList.add("past-main");
-        $("#header-logo").css("width", '300px');
-        $("#footer-logo").css("width", '300px');
     }
 
     if (window.matchMedia("(max-width: 800px)").matches) {
