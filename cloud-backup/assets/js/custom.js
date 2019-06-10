@@ -19,6 +19,16 @@ jQuery(function ($) {
     // get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable
     var mainbottom = $('#main').offset().top;
 
+    if (window.matchMedia("(min-width: 800px)").matches) {
+            $("#header-logo").css("width", '166px');
+            $("#footer-logo").css("width", '166px');
+        }
+
+        if (window.matchMedia("(max-width: 800px)").matches) {
+            $("#header-logo").css("width", window.innerWidth * 0.5 + 'px');
+            $("#footer-logo").css("width", window.innerWidth * 0.5 + 'px');
+        }
+
     // on scroll,
     $(window).on('scroll', function () {
 

@@ -17,6 +17,30 @@
     <link rel="stylesheet" href="assets/css/animsition.min.css">
     <link rel="stylesheet" href="assets/css/ionicons.min.css"> <!-- Resource style -->
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+    <script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#eaf7f7",
+      "text": "#5c7291"
+    },
+    "button": {
+      "background": "#56cbdb",
+      "text": "#ffffff"
+    }
+  },
+  "position": "bottom-right",
+  "content": {
+    "message": "Esta página utiliza cookies para asegurarle la mejor experiencia web.",
+    "dismiss": "Aceptar",
+    "link": "Aprender más",
+    "href": "http://www.all-kom.com/PoliticaPrivacidad/"
+  }
+})});
+</script>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -35,7 +59,7 @@
      data-animsition-out-class="fade-out"
      data-animsition-out-duration="1000">
     <div class="container">
-        <nav class="navbar navbar-default navbar-fixed-top past-main" role="navigation">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="custom-header">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header page-scroll header-left">
@@ -46,8 +70,9 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand page-scroll" href="#main"><img src="assets/logos/logo_landing.png"
-                                                                          height="35" width="166" alt="Mu"/></a>
+                    <a class="navbar-brand page-scroll" href="#main">
+                        <img src="assets/logos/allkom-fortinet_logos.png" height="35" id="header-logo" alt="Mu"/>
+                    </a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
@@ -164,7 +189,7 @@
                                 <li>Protección de servicios de nube</li>
                             </ul>
                             <a class="btn btn-primary btn-action page-scroll"
-                                    href="index.html#contact">MÁS INFORMACIÓN
+                               href="index.html#contact">MÁS INFORMACIÓN
                             </a>
                         </div>
                     </div>
@@ -182,7 +207,7 @@
                                 <li>Evita el uso de aplicaciones peligrosas y tráfico no deseado en la red</li>
                             </ul>
                             <a class="btn btn-primary btn-action page-scroll"
-                                    href="index.html#contact">MÁS INFORMACIÓN</a>
+                               href="index.html#contact">MÁS INFORMACIÓN</a>
                         </div>
                     </div>
                     <div class="f-left">
@@ -201,8 +226,8 @@
                     <div class="features-content wow fadeInLeft" data-wow-delay="0.2s">
                         <p>
                             <b>En Allkom te ayudamos a encontrar la mejor solución, adaptada al presupuesto de tu empresa.
-                            Somos Partner oficial de Fortinet y realizamos implementaciones llave en mano, entendiendo la
-                            importancia de tu negocio y haciendo foco en tus necesidades.</b>
+                                Somos Partner oficial de Fortinet y realizamos implementaciones llave en mano, entendiendo la
+                                importancia de tu negocio y haciendo foco en tus necesidades.</b>
                         </p>
                         <a class="btn btn-primary btn-action page-scroll"
                            href="index.html#contact">MÁS INFORMACIÓN</a>
@@ -291,12 +316,13 @@
             <div class="footer">
                 <div class="container">
                     <div class="col-md-12 text-center">
-                        <img src="assets/logos/logo_landing.png" width="166" height="35" alt=""/>
+                        <img src="assets/logos/allkom-fortinet_logos.png" id="footer-logo" height="35" alt=""/>
                         <ul class="footer-menu">
                             <li><a class="page-scroll" href="index.html#main">Fortinet</a></li>
                             <li><a class="page-scroll" href="index.html#services">Servicio</a></li>
                             <li><a class="page-scroll" href="index.html#features">Features</a></li>
                             <li><a class="page-scroll" href="index.html#contact">Contacto</a></li>
+                            <li><a class="page-scroll" href="http://www.all-kom.com/PoliticaPrivacidad/">Política de Privacidad</a></li>
                         </ul>
                         <div class="footer-text">
                             <p>
